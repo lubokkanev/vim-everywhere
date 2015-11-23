@@ -1,4 +1,4 @@
-#Include %A_ScriptDir%\Shortcuts\Vim\CopyPaste.ahk
+#Include %A_ScriptDir%\Shortcuts\Vim\CopyPasteCut.ahk
 #Include %A_ScriptDir%\Shortcuts\Vim\Delete.ahk
 #Include %A_ScriptDir%\Shortcuts\Vim\NewLineUpDown.ahk
 #Include %A_ScriptDir%\Shortcuts\Vim\Select.ahk

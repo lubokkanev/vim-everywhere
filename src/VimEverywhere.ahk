@@ -1,4 +1,5 @@
 Suspend On
+#UseHook On
 
 #Include Shortcuts\Custom.ahk
 #Include Shortcuts\Vim.ahk
