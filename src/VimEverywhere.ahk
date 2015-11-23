@@ -5,7 +5,12 @@ Suspend On
 
 ^[::
 	Suspend Off
-	Send, {Shift up}{Right}
+	Send, {Shift up}
+	Return
+
++^[::
+	Suspend Off
+	Send, {Shift up}{Right}{Left}
 	Return
 
 i::

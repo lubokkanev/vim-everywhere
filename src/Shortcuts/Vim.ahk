@@ -5,5 +5,4 @@
 #Include %A_ScriptDir%\Shortcuts\Vim\StartEndOfLine.ahk
 #Include %A_ScriptDir%\Shortcuts\Vim\UndoRedo.ahk
 #Include %A_ScriptDir%\Shortcuts\Vim\WordRightLeft.ahk
-
 #Include %A_ScriptDir%\Shortcuts\Vim\Arrows.ahk
