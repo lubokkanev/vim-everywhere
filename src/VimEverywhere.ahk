@@ -1,18 +1,11 @@
 Suspend On
 
-#Include scripts/CustomShortcuts.ahk
-#Include scripts/CustomVimLikeShortcuts.ahk
-#Include scripts/OsArrowShortcuts.ahk
-#Include scripts/VimShortcuts.ahk
+#Include Shortcuts\Custom.ahk
+#Include Shortcuts\Vim.ahk
 
 ^[::
 	Suspend Off
-	Send, {Shift up}{Left}{Right}
-	Return
-
-+^[::
-	Suspend Off
-	Send, {Shift up}{Left}{Right}
+	Send, {Shift up}{Right}
 	Return
 
 i::
@@ -26,6 +19,12 @@ i::
 	Return
 
 a::
+	Suspend On
+	Send, {Shift up}
+	Send, {Right}
+	Return
+
++a::
 	Suspend On
 	Send, {Shift up}
 	Send, {Right}

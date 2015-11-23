@@ -1,5 +1,3 @@
-; Volume: Alt + Win + arrow
-
 #!l::
 	Send, {Alt down}{Win down}{Right}
 	Return 
