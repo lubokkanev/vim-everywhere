@@ -1,7 +1,7 @@
-#Include scripts/CustomShortcuts.ahk
-#Include scripts/CustomVimLikeShortcuts.ahk
-#Include scripts/OsArrowShortcuts.ahk
-#Include scripts/VimShortcuts.ahk
+#Include Scripts/CustomShortcuts.ahk
+#Include Scripts/CustomVimLikeShortcuts.ahk
+#Include Scripts/OsArrowShortcuts.ahk
+#Include Scripts/VimShortcuts.ahk
 
 Suspend On
 
