@@ -3,5 +3,5 @@ v::
 	Return
 
 +v::
-	Send, {Home}{Shift down}{Down}
+	Send, {Home}{Home}{Shift down}{Down}
 	Return
