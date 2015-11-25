@@ -1,15 +1,15 @@
-x::
+$x::
 	Send, {Shift up}{Delete}
 	Return
 
-^x::
+$^x::
 	Send, {Shift up}{Ctrl down}{Delete}{Ctrl up}
 	Return
 	
-+x::
+$+x::
 	Send, {Shift up}{Delete}
 	Return
 
-+^x::
+$+^x::
 	Send, {Shift up}{Ctrl down}{Delete}{Ctrl up}
 	Return
