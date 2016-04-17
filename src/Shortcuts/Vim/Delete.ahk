@@ -13,3 +13,18 @@ $+x::
 $+^x::
 	Send, {Shift up}{Ctrl down}{Delete}{Ctrl up}
 	Return
+$s::
+	Send, {Shift up}{Delete}i
+	Return
+
+$^s::
+	Send, {Shift up}{Ctrl down}{Delete}{Ctrl up}i
+	Return
+	
+$+s::
+	Send, {Shift up}{Home}{Shift down}{End}{Shift up}{Delete}i
+	Return
+
+$+^s::
+	Send, {Shift up}{Ctrl down}{Delete}{Ctrl up}i
+	Return
