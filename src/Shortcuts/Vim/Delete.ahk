@@ -22,7 +22,7 @@ $^s::
 	Return
 	
 $+s::
-	Send, {Shift up}{Home}{Shift down}{End}{Shift up}{Delete}i
+	Send, {Shift up}{Delete}i
 	Return
 
 $+^s::
