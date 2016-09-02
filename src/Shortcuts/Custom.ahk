@@ -1,3 +1,3 @@
-#Include %A_ScriptDir%\Shortcuts\Custom\Quit.ahk
-#Include %A_ScriptDir%\Shortcuts\Custom\Refresh.ahk
-#Include %A_ScriptDir%\Shortcuts\Custom\Volume.ahk
+#Include %A_ScriptDir%\shortcuts\custom\quit.ahk
+#Include %A_ScriptDir%\shortcuts\custom\refresh.ahk
+#Include %A_ScriptDir%\shortcuts\custom\volume.ahk

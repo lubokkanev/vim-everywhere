@@ -1,19 +1,19 @@
-#Include %A_ScriptDir%\Shortcuts\Vim\Arrows\OnlyArrows.ahk
+#Include %a_scriptDir%\shortcuts\vim\arrows\only-arrows.ahk
 
-#Include %A_ScriptDir%\Shortcuts\Vim\Arrows\ShiftArrows.ahk
-#Include %A_ScriptDir%\Shortcuts\Vim\Arrows\WinArrows.ahk
-#Include %A_ScriptDir%\Shortcuts\Vim\Arrows\AltArrows.ahk
-#Include %A_ScriptDir%\Shortcuts\Vim\Arrows\CtrlArrows.ahk
+#Include %a_scriptDir%\shortcuts\vim\arrows\shift-arrows.ahk
+#Include %a_scriptDir%\shortcuts\vim\arrows\win-arrows.ahk
+#Include %a_scriptDir%\shortcuts\vim\arrows\alt-arrows.ahk
+#Include %a_scriptDir%\shortcuts\vim\arrows\ctrl-arrows.ahk
 
-#Include %A_ScriptDir%\Shortcuts\Vim\Arrows\CtrlAltArrows.ahk
-#Include %A_ScriptDir%\Shortcuts\Vim\Arrows\CtrlShiftArrows.ahk
-#Include %A_ScriptDir%\Shortcuts\Vim\Arrows\CtrlWinArrows.ahk
-#Include %A_ScriptDir%\Shortcuts\Vim\Arrows\ShiftWinArrows.ahk
-#Include %A_ScriptDir%\Shortcuts\Vim\Arrows\ShiftAltArrows.ahk
+#Include %a_scriptDir%\shortcuts\vim\arrows\ctrl-alt-arrows.ahk
+#Include %a_scriptDir%\shortcuts\vim\arrows\ctrl-shift-arrows.ahk
+#Include %a_scriptDir%\shortcuts\vim\arrows\ctrl-win-arrows.ahk
+#Include %a_scriptDir%\shortcuts\vim\arrows\shift-win-arrows.ahk
+#Include %a_scriptDir%\shortcuts\vim\arrows\shift-alt-arrows.ahk
 
-#Include %A_ScriptDir%\Shortcuts\Vim\Arrows\CtrlShiftWinArrows.ahk
-#Include %A_ScriptDir%\Shortcuts\Vim\Arrows\CtrlShiftAltArrows.ahk
-#Include %A_ScriptDir%\Shortcuts\Vim\Arrows\CtrlWinAltArrows.ahk
-#Include %A_ScriptDir%\Shortcuts\Vim\Arrows\ShiftWinAltArrows.ahk
+#Include %a_scriptDir%\shortcuts\vim\arrows\ctrl-shift-win-arrows.ahk
+#Include %a_scriptDir%\shortcuts\vim\arrows\ctrl-shift-alt-arrows.ahk
+#Include %a_scriptDir%\shortcuts\vim\arrows\ctrl-win-alt-arrows.ahk
+#Include %a_scriptDir%\shortcuts\vim\arrows\shift-win-alt-arrows.ahk
 
-#Include %A_ScriptDir%\Shortcuts\Vim\Arrows\CtrlShiftWinAltArrows.ahk
+#Include %a_scriptDir%\shortcuts\vim\arrows\ctrl-shift-win-alt-arrows.ahk

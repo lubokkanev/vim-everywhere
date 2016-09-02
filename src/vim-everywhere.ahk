@@ -1,7 +1,7 @@
 Suspend On
 
-#Include Shortcuts\Custom.ahk
-#Include Shortcuts\Vim.ahk
+#Include shortcuts\custom.ahk
+#Include shortcuts\vim.ahk
 
 ^[::
 	Suspend Off
