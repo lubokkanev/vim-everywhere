@@ -18,7 +18,7 @@ $s::
 	Return
 
 $^s::
-	Send, {Shift up}{Ctrl down}{Delete}{Ctrl up}i
+	Send, {Shift up}{Ctrl down}s{Ctrl up}
 	Return
 	
 $+s::
