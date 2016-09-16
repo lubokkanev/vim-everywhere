@@ -6,7 +6,7 @@
 	Suspend Permit
 
 	if (isSuspended == 1) {
-		Run, C:\ProgramData\Microsoft\Windows\Start Menu\Programs\custom\Lock
+		Run, D:\tools\vim-everywhere\tools\locker\runners\lock
 	} else if (isSuspended == 0) {
 		Send, {LWin down}{Right}{LWin up}
 	}
