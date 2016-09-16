@@ -3,7 +3,14 @@
 	Return
 
 #l::
-	Send, {LWin down}{Right}{LWin up}
+	Suspend Permit
+
+	if (isSuspended == 1) {
+		Run, C:\ProgramData\Microsoft\Windows\Start Menu\Programs\custom\Lock
+	} else if (isSuspended == 0) {
+		Send, {LWin down}{Right}{LWin up}
+	}
+
 	Return
 
 #j::
