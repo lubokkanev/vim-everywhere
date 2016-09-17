@@ -14,7 +14,8 @@ $+^x::
 	Send, {Shift up}{Ctrl down}{Delete}{Ctrl up}
 	Return
 $s::
-	Send, {Shift up}{Delete}i
+	Suspend On
+	Send, {Shift up}{Delete}
 	Return
 
 $^s::
@@ -22,9 +23,11 @@ $^s::
 	Return
 	
 $+s::
-	Send, {Shift up}{Delete}i
+	Suspend On
+	Send, {Shift up}{Delete}
 	Return
 
 $+^s::
-	Send, {Shift up}{Ctrl down}{Delete}{Ctrl up}i
+	Suspend On
+	Send, {Shift up}{Ctrl down}{Delete}{Ctrl up}
 	Return
