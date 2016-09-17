@@ -7,7 +7,7 @@
 
 	if (A_IsSuspended) {
 		Run, D:\tools\vim-everywhere\tools\locker\runners\lock
-	} else if (isSuspended == 0) {
+	} else {
 		Send, {LWin down}{Right}{LWin up}
 	}
 
