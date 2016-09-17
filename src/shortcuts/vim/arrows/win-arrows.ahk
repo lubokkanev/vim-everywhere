@@ -5,7 +5,7 @@
 #l::
 	Suspend Permit
 
-	if (isSuspended == 1) {
+	if (A_IsSuspended) {
 		Run, D:\tools\vim-everywhere\tools\locker\runners\lock
 	} else if (isSuspended == 0) {
 		Send, {LWin down}{Right}{LWin up}
