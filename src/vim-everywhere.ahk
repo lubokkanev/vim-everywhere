@@ -11,7 +11,6 @@ Suspend On
 +^[::
 	Suspend Off
 	Send, {Shift up}
-	Send, {Right}{Left}
 	Return
 
 i::
