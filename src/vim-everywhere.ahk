@@ -5,32 +5,37 @@ Suspend On
 
 ^[::
 	Suspend Off
-	Send, {Shift up}
+	releaseLocks()
 	Return
 
 +^[::
 	Suspend Off
-	Send, {Shift up}
+	releaseLocks()
 	Return
 
 i::
 	Suspend On
-	Send, {Shift up}
+	releaseLocks()
 	Return
 	
 +i::
 	Suspend On
-	Send, {Shift up}
+	releaseLocks()
 	Return
 
 a::
 	Suspend On
-	Send, {Shift up}
+	releaseLocks()
 	Send, {Right}
 	Return
 
 +a::
 	Suspend On
-	Send, {Shift up}
+	releaseLocks()
 	Send, {Right}
 	Return
+
+; functions:
+releaseLocks() {
+	Send, {Shift up}{Ctrl up}
+}
