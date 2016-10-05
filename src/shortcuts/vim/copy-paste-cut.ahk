@@ -27,5 +27,5 @@ c::
 	Return
 	
 +c::
-	Send, {Shift down}{End}{Shift up}{Delete}
 	Suspend on
+	Send, {Shift down}{End}{Shift up}{Delete}
