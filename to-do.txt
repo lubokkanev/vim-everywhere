@@ -1,3 +1,3 @@
 - Make a timer, so after X minutes of inactivity, the mode changes to insert. 
 - Find a way to fix the bug when holding down a key and the command is repeated too fast. 
-- 
+- Make it check if the lock file exist, before it runs it, so it doesn't show an error. 
