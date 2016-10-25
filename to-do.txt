@@ -1,3 +1,4 @@
 - Make a timer, so after X minutes of inactivity, the mode changes to insert. 
 - Find a way to fix the bug when holding down a key and the command is repeated too fast. 
 - Make it check if the lock file exist, before it runs it, so it doesn't show an error. 
+- Make a boolean variable, that's true, only when 'v' or 'V' are activated. This way you can use capital letters without fear that it's a 'Shift', left from previous use of 'v' or 'V'.
