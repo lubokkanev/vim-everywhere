@@ -11,6 +11,8 @@ d::
 	Return
 	
 c::
+	Suspend on
+	modeChangeOperations()
 	Send, {Shift up}{Ctrl down}x{Ctrl up}
 	Return
 	
@@ -23,9 +25,13 @@ c::
 	Return
 
 +d::
-	Send, {Shift down}{End}{Shift up}{Delete}
+	Send, {Shift up}{Ctrl down}x{Ctrl up}
+;	Send, {Shift down}{End}{Shift up}{Delete}
 	Return
 	
 +c::
 	Suspend on
-	Send, {Shift down}{End}{Shift up}{Delete}
+	modeChangeOperations()
+	Send, {Shift up}{Ctrl down}x{Ctrl up}
+;	Send, {Shift down}{End}{Shift up}{Delete}
+	Return
