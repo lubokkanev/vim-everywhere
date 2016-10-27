@@ -6,7 +6,7 @@
 	Suspend Permit
 
 	if (A_IsSuspended) {
-		Run, D:\tools\vim-everywhere\tools\locker\runners\lock
+		Run, ..\tools\power-options\runners\switch-user
 	} else {
 		Send, {LWin down}{Right}{LWin up}
 	}
