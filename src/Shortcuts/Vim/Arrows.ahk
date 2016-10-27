@@ -10,6 +10,7 @@
 #Include %a_scriptDir%\shortcuts\vim\arrows\ctrl-win-arrows.ahk
 #Include %a_scriptDir%\shortcuts\vim\arrows\shift-win-arrows.ahk
 #Include %a_scriptDir%\shortcuts\vim\arrows\shift-alt-arrows.ahk
+#Include %a_scriptDir%\shortcuts\vim\arrows\win-alt-arrows.ahk
 
 #Include %a_scriptDir%\shortcuts\vim\arrows\ctrl-shift-win-arrows.ahk
 #Include %a_scriptDir%\shortcuts\vim\arrows\ctrl-shift-alt-arrows.ahk
