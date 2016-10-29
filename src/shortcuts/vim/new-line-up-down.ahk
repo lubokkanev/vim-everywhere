@@ -1,9 +1,13 @@
 o::
-	Send, {Shift up}{End}{Enter}
 	Suspend On
+	modeChangeOperations()
+	
+	Send, {Shift up}{End}{Enter}
 	Return
 
 +o::
-	Send, {Shift up}{Home}{Enter}{Up}
 	Suspend On
+	modeChangeOperations()
+	
+	Send, {Shift up}{Home}{Enter}{Up}
 	Return
