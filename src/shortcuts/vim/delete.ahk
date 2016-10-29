@@ -15,6 +15,8 @@ $+^x::
 	Return
 $s::
 	Suspend On
+	modeChangeOperations()
+
 	Send, {Shift up}{Delete}
 	Return
 
@@ -24,10 +26,14 @@ $^s::
 	
 $+s::
 	Suspend On
+	modeChangeOperations()
+	
 	Send, {Shift up}{Delete}
 	Return
 
 $+^s::
 	Suspend On
-	Send, {Shift up}{Ctrl down}{Delete}{Ctrl up}
+	modeChangeOperations()
+
+Send, {Shift up}{Ctrl down}{Delete}{Ctrl up}
 	Return
