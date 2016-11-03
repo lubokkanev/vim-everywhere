@@ -6,7 +6,7 @@
 	Suspend Permit
 
 	if (A_IsSuspended) {
-		Run, ..\tools\power-option-switchers\runners\lock
+		Run, ..\tools\power-option-switchers\runners\switch-user
 	} else {
 		Send, {LWin down}{Right}{LWin up}
 	}

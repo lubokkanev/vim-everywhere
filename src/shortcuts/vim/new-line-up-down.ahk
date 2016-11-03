@@ -1,13 +1,11 @@
 o::
-	Suspend On
-	modeChangeOperations()
-	
+	switchToInsertMode()
+
 	Send, {Shift up}{End}{Enter}
 	Return
 
 +o::
-	Suspend On
-	modeChangeOperations()
+	switchToInsertMode()
 	
 	Send, {Shift up}{Home}{Enter}{Up}
 	Return

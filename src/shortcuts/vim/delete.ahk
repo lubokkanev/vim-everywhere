@@ -14,9 +14,7 @@ $+^x::
 	Send, {Shift up}{Ctrl down}{Delete}{Ctrl up}
 	Return
 $s::
-	Suspend On
-	modeChangeOperations()
-
+	switchToInsertMode()
 	Send, {Shift up}{Delete}
 	Return
 
@@ -25,15 +23,11 @@ $^s::
 	Return
 	
 $+s::
-	Suspend On
-	modeChangeOperations()
-	
+	switchToInsertMode()
 	Send, {Shift up}{Delete}
 	Return
 
 $+^s::
-	Suspend On
-	modeChangeOperations()
-
-Send, {Shift up}{Ctrl down}{Delete}{Ctrl up}
+	switchToInsertMode()
+	Send, {Shift up}{Ctrl down}{Delete}{Ctrl up}
 	Return

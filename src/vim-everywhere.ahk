@@ -1,54 +1,33 @@
-Suspend On
-setIcon()
+switchToInsertMode()
 
 #Include shortcuts\custom.ahk
 #Include shortcuts\vim.ahk
+#Include functions\functions.ahk
 
 ^[::
-	Suspend Off
-	modeChangeOperations()
+	Suspend Permit
+	switchToCommandMode()
 	Return
 
 +^[::
-	Suspend Off
-	modeChangeOperations()
+	Suspend Permit
+	switchToCommandMode()
 	Return
 
 i::
-	Suspend On
-	modeChangeOperations()
+	switchToInsertMode()
 	Return
 	
 +i::
-	Suspend On
-	modeChangeOperations()
+	switchToInsertMode()
 	Return
 
 a::
-	Suspend On
-	modeChangeOperations()
+	switchToInsertMode()
 	Send, {Right}
 	Return
 
 +a::
-	Suspend On
-	modeChangeOperations()
+	switchToInsertMode()
 	Send, {Right}
 	Return
-
-; functions:
-releaseLocks() {
-	Send, {Shift up}{Ctrl up}
-}
-	
-setIcon() {
-	If A_IsSuspended
-		Menu, Tray, Icon, ..\icons\grey.ico, , 1
-	Else
-		Menu, Tray, Icon, ..\icons\green.ico, , 1
-}
-
-modeChangeOperations() {
-	releaseLocks()
-	setIcon()
-}
