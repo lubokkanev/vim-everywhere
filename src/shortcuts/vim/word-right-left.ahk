@@ -13,3 +13,11 @@ b::
 +b::
 	Send, {Ctrl down}{Left}{Ctrl up}
 	Return
+
+e::
+	Send, {Ctrl down}{Right}{Ctrl up}{Left}
+	Return
+
++e::
+	Send, {Ctrl down}{Right}{Ctrl up}{Left}
+	Return
