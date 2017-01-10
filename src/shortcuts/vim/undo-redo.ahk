@@ -3,7 +3,7 @@ u::
 	Return
 
 ^r::
-	Send, {Shift up}{Ctrl down}y{Ctrl up}
+	Send, {Shift up}{Ctrl down}y
 	Return
 
 +u::
@@ -11,6 +11,5 @@ u::
 	Return
 
 +^r::
-	Send, {Shift up}{Ctrl down}y{Ctrl up}
+	Send, {Shift up}{Ctrl down}y
 	Return
-	
