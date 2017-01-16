@@ -45,3 +45,10 @@
 ^+0::
 	Send, {Ctrl down}{Shift down}{Home}
 	Return
+
+:?*CZB0:gg::
+	Send, {Ctrl down}{Home}{Ctrl up}
+	Return
+
+g::
+	Return

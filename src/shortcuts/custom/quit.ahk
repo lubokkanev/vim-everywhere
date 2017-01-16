@@ -1,4 +1,4 @@
 q::
-	Send, {Alt down}{F4}{Alt up}{Shift up}
+	Send, {Shift up}{Alt down}{F4}{Alt up}
 	Return
 	

@@ -1,4 +1,4 @@
 r::
-	Send, {F5}{Shift up}
+	Send, {Shift up}{F5}
 	Return
 	
