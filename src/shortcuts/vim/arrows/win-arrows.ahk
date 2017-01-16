@@ -1,5 +1,5 @@
 #h::
-	Send, {LWin down}{Left}{LWin up}
+	Send, #{Left}
 	Return
 
 #l::
@@ -8,15 +8,15 @@
 	if (A_IsSuspended) {
 		Run, ..\tools\power-option-switchers\runners\switch-user
 	} else {
-		Send, {LWin down}{Right}{LWin up}
+		Send, #{Right}
 	}
 
 	Return
 
 #j::
-	Send, {LWin down}{Down}{LWin up}
+	Send, #{Down}
 	Return
 
 #k::
-	Send, {LWin down}{Up}{LWin up}
+	Send, #{Up}
 	Return

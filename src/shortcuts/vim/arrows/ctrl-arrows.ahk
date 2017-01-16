@@ -1,15 +1,15 @@
 ^h::
-	Send, {Ctrl down}{Left}
+	Send, ^{Left}
 	Return
 
 ^l::
-	Send, {Ctrl down}{Right}
+	Send, ^{Right}
 	Return
 
 ^j::
-	Send, {Ctrl down}{Down}
+	Send, ^{Down}
 	Return
 
 ^k::
-	Send, {Ctrl down}{Up}
+	Send, ^{Up}
 	Return

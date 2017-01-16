@@ -1,42 +1,47 @@
 p::
-	Send, {Shift up}{Ctrl down}v{Ctrl up}
+	Send, {Shift up}
+	Send, ^v
 	Return
 
 y::
-	Send, {Shift up}{Ctrl down}c{Ctrl up}
+	Send, {Shift up}
+	Send, ^c
 	Return
 
 d::
 	Return
 
 :?*CZB0:dd::
-	Send, {Home}{Shift down}{End}{Right}{Shift up}{Delete}
+	Send, {Home}
+	Send, +{End}{Right}
+	Send, {Delete}
 	Return
 
 :?*CZB0:dw::
-	Send, b{Left}{Shift down}{Ctrl down}{Right}{Ctrl up}{Shift up}{Delete}
+	Send, +^{Right}
+	Send, {Delete}
+	Send, b
 	Return
-	
+
 c::
 	switchToInsertMode()
-	Send, {Shift up}{Ctrl down}x{Ctrl up}
+	Send, {Shift up}
+	Send, ^x
 	Return
 	
 +p::
-	Send, {Shift up}{Ctrl down}v{Ctrl up}
+	Send, {Shift up}
+	Send, ^v
 	Return
 
 +y::
-	Send, {Shift up}{Ctrl down}c{Ctrl up}
-	Return
-
-+d::
-	Send, {Shift up}{Ctrl down}x{Ctrl up}
-;	Send, {Shift down}{End}{Shift up}{Delete}
+	Send, {Shift up}
+	Send, ^c
 	Return
 	
 +c::
 	switchToInsertMode()
-	Send, {Shift up}{Ctrl down}x{Ctrl up}
+	Send, {Shift up}
+	Send, ^x
 ;	Send, {Shift down}{End}{Shift up}{Delete}
 	Return

@@ -1,15 +1,15 @@
 !h::
-	Send, {Alt down}{Left}
+	Send, !{Left}
 	Return 
 
 !l::
-	Send, {Alt down}{Right}
+	Send, !{Right}
 	Return 
 
 !j::
-	Send, {Alt down}{Down}
+	Send, !{Down}
 	Return 
 
 !k::
-	Send, {Alt down}{Up}
+	Send, !{Up}
 	Return

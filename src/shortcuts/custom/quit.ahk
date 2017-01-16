@@ -1,4 +1,5 @@
 q::
-	Send, {Shift up}{Alt down}{F4}{Alt up}
+	Send, {Shift up}
+	Send, !{F4}
 	Return
 	

@@ -1,33 +1,41 @@
 $x::
-	Send, {Shift up}{Delete}
+	Send, {Shift up}
+	Send, {Delete}
 	Return
 
 $^x::
-	Send, {Shift up}{Ctrl down}{Delete}{Ctrl up}
+	Send, {Shift up}
+	Send, ^{Delete}
 	Return
 	
 $+x::
-	Send, {Shift up}{Delete}
+	Send, {Shift up}
+	Send, {Delete}
 	Return
 
 $+^x::
-	Send, {Shift up}{Ctrl down}{Delete}{Ctrl up}
+	Send, {Shift up}
+	Send, ^{Delete}
 	Return
 $s::
 	switchToInsertMode()
-	Send, {Shift up}{Delete}
+	Send, {Shift up}
+	Send, {Delete}
 	Return
 
 $^s::
-	Send, {Shift up}{Ctrl down}s{Ctrl up}
+	Send, {Shift up}
+	Send, ^s
 	Return
 	
 $+s::
 	switchToInsertMode()
-	Send, {Shift up}{Delete}
+	Send, {Shift up}
+	Send, {Delete}
 	Return
 
 $+^s::
 	switchToInsertMode()
-	Send, {Shift up}{Ctrl down}{Delete}{Ctrl up}
+	Send, {Shift up}
+	Send, ^{Delete}
 	Return

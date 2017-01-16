@@ -1,23 +1,25 @@
 w::
-	Send, {Ctrl down}{Right}{Ctrl up}
+	Send, ^{Right}
 	Return
 
 b::
-	Send, {Ctrl down}{Left}{Ctrl up}
+	Send, ^{Left}
 	Return
 
 +w::
-	Send, {Ctrl down}{Right}{Ctrl up}
+	Send, ^{Right}
 	Return
 
 +b::
-	Send, {Ctrl down}{Left}{Ctrl up}
+	Send, ^{Left}
 	Return
 
 e::
-	Send, {Ctrl down}{Right}{Ctrl up}{Left}
+	Send, ^{Right}
+	Send, {Left}
 	Return
 
 +e::
-	Send, {Ctrl down}{Right}{Ctrl up}{Left}
+	Send, ^{Right}
+	Send, {Left}
 	Return

@@ -1,15 +1,19 @@
 u::
-	Send, {Shift up}{Ctrl down}z{Ctrl up}
+	Send, {Shift up}
+	Send, ^z
 	Return
 
 ^r::
-	Send, {Shift up}{Ctrl down}y
+	Send, {Shift up}
+	Send, ^y
 	Return
 
 +u::
-	Send, {Shift up}{Ctrl down}z{Ctrl up}
+	Send, {Shift up}
+	Send, ^z
 	Return
 
 +^r::
-	Send, {Shift up}{Ctrl down}y
+	Send, {Shift up}
+	Send, ^y
 	Return

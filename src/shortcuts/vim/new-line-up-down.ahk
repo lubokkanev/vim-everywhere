@@ -1,11 +1,11 @@
 o::
 	switchToInsertMode()
-
-	Send, {Shift up}{End}{Enter}
+	Send, {Shift up}
+	Send, {End}{Enter}
 	Return
 
 +o::
 	switchToInsertMode()
-	
-	Send, {Shift up}{Home}{Enter}{Up}
+	Send, {Shift up}
+	Send, {Home}{Enter}{Up}
 	Return

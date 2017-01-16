@@ -15,39 +15,39 @@
 	Return
 
 +0::
-	Send, {Shift down}{Home}
+	Send, +{Home}
 	Return
 
 +9::
-	Send, {Shift down}{End}
+	Send, +{End}
 	Return
 
 ^0::
-	Send, {Ctrl down}{Home}{Ctrl up}
+	Send, ^{Home}
 	Return
 
 ^9::
-	Send, {Ctrl down}{End}{Ctrl up}
+	Send, ^{End}
 	Return
 
 +g::
-	Send, {Ctrl down}{End}{Ctrl up}
+	Send, ^{End}
 	Return
 
 ^g::
-	Send, {Ctrl down}{Home}{Ctrl up}
+	Send, ^{Home}
 	Return
 
 ^+9::
-	Send, {Ctrl down}{Shift down}{End}
+	Send, ^+{End}
 	Return
 
 ^+0::
-	Send, {Ctrl down}{Shift down}{Home}
+	Send, ^+{Home}
 	Return
 
 :?*CZB0:gg::
-	Send, {Ctrl down}{Home}{Ctrl up}
+	Send, ^{Home}
 	Return
 
 g::
