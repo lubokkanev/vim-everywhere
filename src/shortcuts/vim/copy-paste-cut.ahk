@@ -6,12 +6,15 @@ y::
 	Send, {Shift up}{Ctrl down}c{Ctrl up}
 	Return
 
-:?*CZB:dd::
+d::
+	Return
+
+:?*CZB0:dd::
 	Send, {Home}{Shift down}{End}{Right}{Shift up}{Delete}
 	Return
 
-:?*CZB:dw::
-	Send, {Shift down}{Ctrl down}{Right}{Ctrl up}{Shift up}{Delete}
+:?*CZB0:dw::
+	Send, b{Left}{Shift down}{Ctrl down}{Right}{Ctrl up}{Shift up}{Delete}
 	Return
 	
 c::
