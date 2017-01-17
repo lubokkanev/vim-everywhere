@@ -20,6 +20,7 @@ i::
 	
 +i::
 	switchToInsertMode()
+	Send, {Home}
 	Return
 
 a::
@@ -29,5 +30,5 @@ a::
 
 +a::
 	switchToInsertMode()
-	Send, {Right}
+	Send, {End}
 	Return
