@@ -39,3 +39,8 @@ $+^s::
 	Send, {Shift up}
 	Send, ^{Delete}
 	Return
+
+;r::
+;	Input Key, L1
+;	Send, {Delete}%Key%
+;	Return
