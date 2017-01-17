@@ -5,7 +5,7 @@ u::
 
 ^r::
 	Send, {Shift up}
-	Send, ^y
+	Send, ^+z
 	Return
 
 +u::
@@ -15,5 +15,5 @@ u::
 
 +^r::
 	Send, {Shift up}
-	Send, ^y
+	Send, ^+z
 	Return
