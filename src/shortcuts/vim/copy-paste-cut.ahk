@@ -23,6 +23,12 @@ d::
 	Send, b
 	Return
 
+:?*CZB0:db::
+	Send, +^{Left}
+	Send, {Delete}
+	Send, w
+	Return
+
 c::
 	switchToInsertMode()
 	Send, {Shift up}
