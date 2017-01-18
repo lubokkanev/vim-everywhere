@@ -4,8 +4,41 @@ p::
 	Return
 
 y::
-	Send, {Shift up}
-	Send, ^c
+	Return
+
+:?*CZB0:yy::
+	Send, {Home}{Home}+{Down}
+	Send, ^c{Left}
+	Return
+
+:?*CZB0:yj::
+	Send, {Home}{Home}+{Down}+{Down}
+	Send, ^c{Left}{Up}
+	Return
+
+:?*CZB0:yk::
+	Send, {Home}{Home}{Down}+{Up}+{Up}
+	Send, ^c{Right}
+	Return
+
+:?*CZB0:yl::
+	Send, +{Right}
+	Send, ^c{Left}{Left}
+	Return
+
+:?*CZB0:yh::
+	Send, +{Left}
+	Send, ^c{Right}{Right}
+	Return
+
+:?*CZB0:yw::
+	Send, {Space}^+{Right}^c
+	Send, ^{Left}{BS}^{Left}
+	Return
+
+:?*CZB0:yb::
+	Send, {Space}{Left}^+{Left}^c
+	Send, ^{Right}{Delete}^{Right}
 	Return
 
 d::
