@@ -11,6 +11,11 @@ y::
 d::
 	Return
 
++d::
+	Send, {Shift up}
+	Send, ^x
+	Return
+
 :?*CZB0:dd::
 	Send, {Home}
 	Send, +{End}+{Right}
