@@ -34,6 +34,26 @@ d::
 	Send, w
 	Return
 
+:?*CZB0:dl::
+	Send, {Delete}
+	Send, {Left}
+	Return
+
+:?*CZB0:dh::
+	Send, {Left}{Delete}
+	Send, {Right}
+	Return
+
+:?*CZB0:dj::
+	Send, {Home}+{Down}+{Down}{Delete}
+	Send, {Up}
+	Return
+
+:?*CZB0:dk::
+	Send, {Home}{Down}+{Up}+{Up}{Delete}
+	Send, {Down}
+	Return
+
 c::
 	switchToInsertMode()
 	Send, {Shift up}
