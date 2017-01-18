@@ -13,7 +13,7 @@ d::
 
 :?*CZB0:dd::
 	Send, {Home}
-	Send, +{End}{Right}
+	Send, +{End}+{Right}
 	Send, {Delete}
 	Return
 
