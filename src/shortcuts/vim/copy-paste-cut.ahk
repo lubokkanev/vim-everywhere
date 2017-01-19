@@ -10,9 +10,9 @@ p::
 
 y::
 	if (visualMode) {
-		Send, ^c
 		turnVisualModeOff()
 		hotsringsShouldGo := false
+		Send, ^c
 	}
 
 	Return
@@ -102,10 +102,10 @@ y::
 
 d::
 	if (visualMode) {
-		Send, ^x
 		turnVisualModeOff()
 		hotsringsShouldGo := false
-	}
+		Send, ^x
+}
 
 	Return
 
@@ -202,12 +202,11 @@ d::
 c::
 	if (visualMode) {
 		switchToInsertMode()
+		turnVisualModeOff()
+		hotsringsShouldGo := false
 		Send, s
 	}
 
-	Return
-
-:?*CZB0:cc::
 	Return
 
 +c::
@@ -220,5 +219,13 @@ c::
 	}
 
 	turnVisualModeOff()
+
+	Return
+
+:?*CZB0:cc::
+	if (hotsringsShouldGo) {
+		Send, S
+	}
+	hotsringsShouldGo := true
 
 	Return

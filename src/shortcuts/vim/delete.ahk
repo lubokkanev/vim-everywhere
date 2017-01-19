@@ -1,23 +1,29 @@
-$x::
+x::
 	Send, {Delete}
 	turnVisualModeOff()
 	Return
 
-$^x::
+^x::
 	Send, ^{Delete}
 	Return
 	
-$+x::
++x::
 	Send, {BackSpace}
 	Return
 
-$s::
+s::
 	switchToInsertMode()
+	if (visualMode) {
+		Send, ^x
+	} else {
+		Send, {Delete}
+	}
+	
 	turnVisualModeOff()
-	Send, ^x
+	
 	Return
 
-$+s::
++s::
 	switchToInsertMode()
 	Send, {Home}+{End}^x
 	Return
