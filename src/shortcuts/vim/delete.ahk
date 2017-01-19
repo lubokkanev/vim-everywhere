@@ -3,7 +3,7 @@ x::
 	turnVisualModeOff()
 	Return
 
-^x::
+$^x::
 	Send, ^{Delete}
 	Return
 	
