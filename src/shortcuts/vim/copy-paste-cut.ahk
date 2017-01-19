@@ -105,7 +105,7 @@ d::
 		turnVisualModeOff()
 		hotsringsShouldGo := false
 		Send, ^x
-}
+	}
 
 	Return
 

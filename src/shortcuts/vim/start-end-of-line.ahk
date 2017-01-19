@@ -66,7 +66,12 @@
 	Return
 
 +g::
-	Send, ^{End}
+	if (visualMode) {
+		Send, +^{End}
+	} else {
+		Send, ^{End}
+	}
+	
 	Return
 
 ^g::
