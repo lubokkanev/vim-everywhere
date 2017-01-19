@@ -6,6 +6,11 @@ p::
 y::
 	Return
 
++y::
+	Send, {Shift up}
+	Send, ^c
+	Return
+	
 :?*CZB0:yy::
 	Send, {Home}{Home}+{Down}
 	Send, ^c{Left}
@@ -39,6 +44,14 @@ y::
 :?*CZB0:yb::
 	Send, {Space}{Left}^+{Left}^c
 	Send, ^{Right}{Delete}^{Right}
+	Return
+
+:?*CZB0:y$::
+	Send, +{End}^c
+	Return
+
+:?*CZB0:y^::
+	Send, +{Home}^c
 	Return
 
 d::
@@ -87,6 +100,14 @@ d::
 	Send, {Down}
 	Return
 
+:?*CZB0:d$::
+	Send, +{End}{Delete}
+	Return
+
+:?*CZB0:d^::
+	Send, +{Home}{Delete}
+	Return
+
 c::
 	switchToInsertMode()
 	Send, {Shift up}
@@ -98,11 +119,6 @@ c::
 	Send, ^v
 	Return
 
-+y::
-	Send, {Shift up}
-	Send, ^c
-	Return
-	
 +c::
 	switchToInsertMode()
 	Send, {Shift up}
