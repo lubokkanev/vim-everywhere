@@ -9,17 +9,17 @@ setIcon() {
 		Menu, Tray, Icon, ..\icons\green.ico, , 1
 }
 
-modeChangeOperations() {
+modeSwitchOperations() {
 	releaseLocks()
 	setIcon()
 }
 
 switchToInsertMode() {
 	Suspend On
-	modeChangeOperations()
+	modeSwitchOperations()
 }
 
 switchToCommandMode() {
 	Suspend Off
-	modeChangeOperations()
+	modeSwitchOperations()
 }
