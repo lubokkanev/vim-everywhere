@@ -1,5 +1,6 @@
 releaseLocks() {
 	Send, {Shift up}{Ctrl up}
+	turnVisualModeOff()
 }
 
 setIcon() {

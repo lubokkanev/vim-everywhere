@@ -1,43 +1,25 @@
 $x::
-	Send, {Shift up}
 	Send, {Delete}
+	turnVisualModeOff()
 	Return
 
 $^x::
-	Send, {Shift up}
 	Send, ^{Delete}
 	Return
 	
 $+x::
-	Send, {Shift up}
-	Send, {Delete}
+	Send, {BackSpace}
 	Return
 
-$+^x::
-	Send, {Shift up}
-	Send, ^{Delete}
-	Return
 $s::
 	switchToInsertMode()
-	Send, {Shift up}
-	Send, {Delete}
+	turnVisualModeOff()
+	Send, ^x
 	Return
 
-$^s::
-	Send, {Shift up}
-	Send, ^s
-	Return
-	
 $+s::
 	switchToInsertMode()
-	Send, {Shift up}
-	Send, {Delete}
-	Return
-
-$+^s::
-	switchToInsertMode()
-	Send, {Shift up}
-	Send, ^{Delete}
+	Send, {Home}+{End}^x
 	Return
 
 ;r::

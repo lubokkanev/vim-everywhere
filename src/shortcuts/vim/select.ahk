@@ -1,7 +1,8 @@
 v::
-	Send, {Shift down}
+	turnVisualModeOn()
 	Return
 
 +v::
-	Send, {Home}{Home}{Shift down}{Down}
+	turnVisualModeOn()
+	Send, {Home}{Home}j
 	Return

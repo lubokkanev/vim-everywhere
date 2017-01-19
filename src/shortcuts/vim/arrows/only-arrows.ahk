@@ -1,15 +1,35 @@
 j::
-	Send, {Down}
+	if (visualMode) {
+		Send, +{Down}
+	} else {
+		Send, {Down}
+	}
+
 	Return
 
 k::
-	Send, {Up}
+	if (visualMode) {
+		Send, +{Up}
+	} else {
+		Send, {Up}
+	}
+
 	Return
 
 h::
-	Send, {Left}
+	if (visualMode) {
+		Send, +{Left}
+	} else {
+		Send, {Left}
+	}
+
 	Return
 
 l::
-	Send, {Right}
+	if (visualMode) {
+		Send, +{Right}
+	} else {
+		Send, {Right}
+	}
+
 	Return

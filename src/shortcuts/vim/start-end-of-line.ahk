@@ -1,21 +1,46 @@
 +6::
-	Send, {Home}
+	if (visualMode) {
+		Send, +{Home}
+	} else {
+		Send, {Home}
+	}
+
 	Return
 
 0::
-	Send, {Home}
+	if (visualMode) {
+		Send, +{Home}
+	} else {
+		Send, {Home}
+	}
+	
 	Return
 
 +4::
-	Send, {End}
+	if (visualMode) {
+		Send, +{End}
+	} else {
+		Send, {End}
+	}
+	
 	Return
 
 9::
-	Send, {End}
+	if (visualMode) {
+		Send, +{End}
+	} else {
+		Send, {End}
+	}
+
 	Return
 
 +0::
-	Send, +{Home}
+	if (visualMode) {
+		Send, +{Home}
+	} else {
+		Send, +{Home}
+	}
+
 	Return
 
 +9::
@@ -23,11 +48,21 @@
 	Return
 
 ^0::
-	Send, ^{Home}
+	if (visualMode) {
+		Send, +^{Home}
+	} else {
+		Send, ^{Home}
+	}
+
 	Return
 
 ^9::
-	Send, ^{End}
+	if (visualMode) {
+		Send, +^{End}
+	} else {
+		Send, ^{End}
+	}
+
 	Return
 
 +g::
@@ -35,7 +70,12 @@
 	Return
 
 ^g::
-	Send, ^{Home}
+	if (visualMode) {
+		Send, +^{Home}
+	} else {
+		Send, ^{Home}
+	}
+
 	Return
 
 ^+9::
@@ -47,7 +87,12 @@
 	Return
 
 :?*CZB0:gg::
-	Send, ^{Home}
+	if (visualMode) {
+		Send, +^{Home}
+	} else {
+		Send, ^{Home}
+	}
+
 	Return
 
 g::
