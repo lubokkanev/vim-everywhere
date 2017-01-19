@@ -65,18 +65,18 @@ d::
 :?*CZB0:dd::
 	Send, {Home}
 	Send, +{End}+{Right}
-	Send, {Delete}
+	Send, ^x
 	Return
 
 :?*CZB0:dw::
 	Send, +^{Right}
-	Send, {Delete}
+	Send, ^x
 	Send, b
 	Return
 
 :?*CZB0:db::
 	Send, +^{Left}
-	Send, {Delete}
+	Send, ^x
 	Send, w
 	Return
 
@@ -91,21 +91,25 @@ d::
 	Return
 
 :?*CZB0:dj::
-	Send, {Home}+{Down}+{Down}{Delete}
+	Send, {Home}+{Down}+{Down}
+	Send, ^x
 	Send, {Up}
 	Return
 
 :?*CZB0:dk::
-	Send, {Home}{Down}+{Up}+{Up}{Delete}
+	Send, {Home}{Down}+{Up}+{Up}
+	Send, ^x
 	Send, {Down}
 	Return
 
 :?*CZB0:d$::
-	Send, +{End}{Delete}
+	Send, +{End}
+	Send, ^x
 	Return
 
 :?*CZB0:d^::
-	Send, +{Home}{Delete}
+	Send, +{Home}
+	Send, ^x
 	Return
 
 c::
