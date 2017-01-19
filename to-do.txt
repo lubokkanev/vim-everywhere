@@ -1,2 +1,0 @@
-- Make a timer, so after X minutes of inactivity, the mode changes to insert. Not sure if a good idea.
-- Fix shortcuts like Undo and Redo that don't work when the keyboard layout is not english. 
