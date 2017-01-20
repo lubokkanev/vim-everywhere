@@ -4,5 +4,5 @@ v::
 
 +v::
 	turnVisualModeOn()
-	Send, {Home}{Home}j
+	Send, {Home}{Home}+{Down}
 	Return
