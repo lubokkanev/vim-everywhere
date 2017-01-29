@@ -14,7 +14,7 @@ i::
 	
 +i::
 	switchToInsertMode()
-;	Send, {Home}
+	Send, {Home}
 	Return
 
 a::
