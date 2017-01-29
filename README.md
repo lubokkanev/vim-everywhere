@@ -9,5 +9,5 @@ A script for the Windows application AutoHotKey that implements many of the Vim 
 - Press **i** or **a** to return to **insert** mode. 
 
 # Windows locking
-- To be abled to use **Win+l** shortcut, for snapping windows right, you need to disable windows locking, as it takes over the shortcut. To do that, run the file **tools\windows-lock-functionality\windows-lock-functionality.reg**.
-- When in insert mode, **Win+l** locks the computer as usual, using the **tools\power-option-switchers\lock.bat** file.
+- To be abled to use **Win+L** shortcut, for snapping windows right, you need to disable windows locking, as it takes over the shortcut. To do that, run the file **tools\windows-lock-functionality\disable-lock-functionality.reg**.
+- When in insert mode, **Win+L** locks the computer as usual, using the **tools\power-option-switchers\lock.bat** file.
