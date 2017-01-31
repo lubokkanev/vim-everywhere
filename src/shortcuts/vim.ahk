@@ -6,3 +6,4 @@
 #Include %A_ScriptDir%\shortcuts\vim\undo-redo.ahk
 #Include %A_ScriptDir%\shortcuts\vim\word-right-left.ahk
 #Include %A_ScriptDir%\shortcuts\vim\arrows.ahk
+#Include %A_ScriptDir%\shortcuts\vim\page-up-down.ahk
