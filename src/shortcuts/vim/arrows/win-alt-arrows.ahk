@@ -1,15 +1,15 @@
 #!h::
-	Send, {LWin down}{Alt down}{Left}{LWin up}
+	Send, #!{Left}
 	Return
 
 #!l::
-	Send, {LWin down}{Alt down}{Right}{LWin up}
+	Send, #!{Right}
 	Return
 	
 ;#!j::
-;	Send, {LWin down}{Alt down}{Down}{LWin up}
+;	Send, #!{Down}
 ;	Return
 ;
 ;#!k::
-;	Send, {LWin down}{Alt down}{Up}{LWin up}
+;	Send, #!{Up}
 ;	Return

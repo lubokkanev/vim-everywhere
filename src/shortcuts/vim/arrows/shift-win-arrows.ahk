@@ -1,15 +1,15 @@
 +#h::
-	Send, {Shift down}{Left}
+	Send, +#{Left}
 	Return 
 
 +#l::
-	Send, {Shift down}{Right}
+	Send, +#{Right}
 	Return 
 
 +#j::
-	Send, {Shift down}{Down}
+	Send, +#{Down}
 	Return 
 
 +#k::
-	Send, {Shift down}{Up}
+	Send, +#{Up}
 	Return
