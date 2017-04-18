@@ -145,7 +145,7 @@ d::
 
 :?*CZB0:dl::
 	if (hotsringsShouldGo) {
-		Send, +{Right}^x
+		Send, {Delete}
 		Send, {Left}
 	}
 	hotsringsShouldGo := true
@@ -154,7 +154,7 @@ d::
 
 :?*CZB0:dh::
 	if (hotsringsShouldGo) {
-		Send, +{Left}^x
+		Send, {Left}{Delete}
 		Send, {Right}
 	}
 	hotsringsShouldGo := true
@@ -190,13 +190,22 @@ d::
 	
 	Return
 
-:?*CZB0:d^::
+deleteToLineStart() {
 	if (hotsringsShouldGo) {
 		Send, +{Home}
 		Send, ^x
 	}
 	hotsringsShouldGo := true
 	
+	Return
+}
+
+:?*CZB0:d^::
+	deleteToLineStart()
+	Return
+
+:?*CZB0:d0::
+	deleteToLineStart()
 	Return
 
 c::
@@ -229,3 +238,4 @@ c::
 	hotsringsShouldGo := true
 
 	Return
+
