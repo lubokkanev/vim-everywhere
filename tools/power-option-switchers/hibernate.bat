@@ -1,2 +1,2 @@
 call "%~dp0\lock.bat"
-shutdown /h
+shutdown -h

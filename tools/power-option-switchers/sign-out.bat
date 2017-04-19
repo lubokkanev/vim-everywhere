@@ -1,1 +1,1 @@
-shutdown /l /f
+shutdown -l -f
