@@ -7,4 +7,3 @@ global hotsringsShouldGo := true
 #Include shortcuts.ahk
 
 #SingleInstance force
-

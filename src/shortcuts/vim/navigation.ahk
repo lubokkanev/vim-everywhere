@@ -14,3 +14,11 @@
 	Send, ^{Up}
 	Return
 
+{::
+	Send, !+y
+	Return
+
+}::
+	Send, !+u
+	Return
+
