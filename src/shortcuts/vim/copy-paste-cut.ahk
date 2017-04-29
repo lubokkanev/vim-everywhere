@@ -145,7 +145,7 @@ d::
 
 :?*CZB0:dl::
 	if (hotsringsShouldGo) {
-		Send, {Delete}
+		Send, +{Right}^x
 		Send, {Left}
 	}
 	hotsringsShouldGo := true
@@ -154,7 +154,7 @@ d::
 
 :?*CZB0:dh::
 	if (hotsringsShouldGo) {
-		Send, {Left}{Delete}
+		Send, +{Left}^x
 		Send, {Right}
 	}
 	hotsringsShouldGo := true
