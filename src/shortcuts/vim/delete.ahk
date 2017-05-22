@@ -28,7 +28,13 @@ s::
 	Send, {Home}+{End}^x
 	Return
 
-;r::
-;	Input Key, L1
-;	Send, {Delete}%Key%
-;	Return
+r::
+	switchToInsertMode()
+
+	Input, Key, L1
+	Send, +{Right}%Key%{Left}
+
+	switchToCommandMode()
+
+	Return
+
