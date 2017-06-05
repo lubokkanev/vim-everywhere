@@ -32,7 +32,7 @@ r::
 	switchToInsertMode()
 
 	Input, Key, L1
-	Send, +{Right}%Key%{Left}
+	Send, {Delete}%Key%{Left}
 
 	switchToCommandMode()
 
