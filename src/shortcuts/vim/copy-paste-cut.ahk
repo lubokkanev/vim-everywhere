@@ -11,231 +11,74 @@ p::
 y::
 	if (visualMode) {
 		turnVisualModeOff()
-		hotsringsShouldGo := false
 		Send, ^c
-	}
-
-	Return
-
-+y::
-	Send, y
-	Return
-
-:?*CZB0:yy::
-	if (hotsringsShouldGo) {
-		Send, {Home}{Home}+{Down}
-		Send, ^c{Left}
-	}
-	hotsringsShouldGo := true
-
-	Return
-
-:?*CZB0:yj::
-	if (hotsringsShouldGo) {
-		Send, {Home}{Home}+{Down}+{Down}
-		Send, ^c{Left}{Up}
-	}
-	hotsringsShouldGo := true
-
-	Return
-
-:?*CZB0:yk::
-	if (hotsringsShouldGo) {
-		Send, {Home}{Home}{Down}+{Up}+{Up}
-		Send, ^c{Right}
-	}
-	hotsringsShouldGo := true
-
-	Return
-
-:?*CZB0:yl::
-	if (hotsringsShouldGo) {
-		Send, +{Right}
-		Send, ^c{Left}{Left}
-	}
-	hotsringsShouldGo := true
-
-	Return
-
-:?*CZB0:yh::
-	if (hotsringsShouldGo) {
-		Send, +{Left}
-		Send, ^c{Right}{Right}
-	}
-	hotsringsShouldGo := true
-
-	Return
-
-:?*CZB0:yw::
-	if (hotsringsShouldGo) {
-		Send, {Space}^+{Right}^c
-		Send, ^{Left}{BS}^{Left}
-	}
-	hotsringsShouldGo := true
-
-	Return
-
-:?*CZB0:yb::
-	if (hotsringsShouldGo) {
-		Send, {Space}{Left}^+{Left}^c
-		Send, ^{Right}{Delete}^{Right}
-	}
-	hotsringsShouldGo := true
-
-	Return
-
-:?*CZB0:y$::
-	if (hotsringsShouldGo) {
-		Send, +{End}^c
-	}
-	hotsringsShouldGo := true
-	
-	Return
-
-:?*CZB0:y^::
-	if (hotsringsShouldGo) {
-		Send, +{Home}^c
-	}
-	hotsringsShouldGo := true
+	} else {
+        secondKeyCommand("y", "^c")
+        Send, {Left}
+    }
 
 	Return
 
 d::
 	if (visualMode) {
 		turnVisualModeOff()
-		hotsringsShouldGo := false
 		Send, ^x
-	}
+	} else {
+        secondKeyCommand("d", "^x")
+    }
 
-	Return
+    Return
 
-+d::
-	Send, d
-	Return
+secondKeyCommand(startCommand, finalCommand) {
+    sendCommand := true
+    Input, key, L1
 
-:?*CZB0:dd::
-	if (hotsringsShouldGo) {
-		Send, {Home}
-		Send, +{End}+{Right}
-		Send, ^x
-	}
-	hotsringsShouldGo := true
-	
-	Return
+    if (key == "j") {
+        Send, {Home}+{Down}+{Down}
+    } else if (key == "k") {
+        Send, {Home}{Down}+{Up}+{Up}
+    } else if (key == "h") {
+        Send, +{Left}
+    } else if (key == "l") {
+        Send, +{Right}
+    } else if (key == startCommand) {
+        Send, {Home}{Home}+{End}+{Right}
+    } else if (key == "w") {
+        Send, +^{Right}
+    } else if (key == "b") {
+        Send, +^{Left}
+    } else if (key == "$") {
+        Send, +{End}
+    } else if (key == "^" or key == "0") {
+        Send, +{Home}
+    } else if (key == "g") {
+        Send, {End}+^{Home}
+    } else if (key == "G") {
+        Send, {Home}{Home}+^{End}
+    } else {
+        sendCommand := false
+    }
 
-:?*CZB0:dw::
-	if (hotsringsShouldGo) {
-		Send, +^{Right}
-		Send, ^x
-		Send, b
-	}
-	hotsringsShouldGo := true
-	
-	Return
-
-:?*CZB0:db::
-	if (hotsringsShouldGo) {
-		Send, +^{Left}
-		Send, ^x
-		Send, w
-	}
-	hotsringsShouldGo := true
-	
-	Return
-
-:?*CZB0:dl::
-	if (hotsringsShouldGo) {
-		Send, +{Right}^x
-		Send, {Left}
-	}
-	hotsringsShouldGo := true
-	
-	Return
-
-:?*CZB0:dh::
-	if (hotsringsShouldGo) {
-		Send, +{Left}^x
-		Send, {Right}
-	}
-	hotsringsShouldGo := true
-	
-	Return
-
-:?*CZB0:dj::
-	if (hotsringsShouldGo) {
-		Send, {Home}+{Down}+{Down}
-		Send, ^x
-		Send, {Up}
-	}
-	hotsringsShouldGo := true
-	
-	Return
-
-:?*CZB0:dk::
-	if (hotsringsShouldGo) {
-		Send, {Home}{Down}+{Up}+{Up}
-		Send, ^x
-		Send, {Down}
-	}
-	hotsringsShouldGo := true
-	
-	Return
-
-:?*CZB0:d$::
-	if (hotsringsShouldGo) {
-		Send, +{End}
-		Send, ^x
-	}
-	hotsringsShouldGo := true
-	
-	Return
-
-deleteToLineStart() {
-	if (hotsringsShouldGo) {
-		Send, +{Home}
-		Send, ^x
-	}
-	hotsringsShouldGo := true
-	
-	Return
+    if (sendCommand) {
+        Send, %finalCommand%
+    }
 }
-
-:?*CZB0:d^::
-	deleteToLineStart()
-	Return
-
-:?*CZB0:d0::
-	deleteToLineStart()
-	Return
 
 c::
 	if (visualMode) {
 		switchToInsertMode()
 		turnVisualModeOff()
-		hotsringsShouldGo := false
 		Send, s
-	}
+	} else {
+        secondKeyCommand("c", "^x")
+        switchToInsertMode()
+    }
 
 	Return
 
 +c::
-	if (visualMode) {
-		switchToInsertMode()
-		Send, +s
-	} else {
-		switchToInsertMode()
-		Send, +{End}^x
-	}
+    Send, {Home}{Home}
+    Send, c
 
-	turnVisualModeOff()
-
-	Return
-
-:?*CZB0:cc::
-	if (hotsringsShouldGo) {
-		Send, S
-	}
-	hotsringsShouldGo := true
-
-	Return
+    Return
 
