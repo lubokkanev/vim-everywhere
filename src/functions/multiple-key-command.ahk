@@ -1,0 +1,68 @@
+multipleKeyCommand(shorhtcut, command) {
+    simpleDown := "simple-down"
+    simpleUp := "simple-up"
+
+    Input, key, L1
+    number := 0
+    
+    while (key >= "1" and key <= "9") {
+        number *= 10
+        number += %key%
+
+        Input, key, L1
+    }
+
+    if (number == 0) {
+        number := 1
+    }
+
+    sendCommand := true
+
+    while (number > 0) { 
+        number--
+
+        if (key == "j") {
+            Send, {Home}+{Down}+{Down}
+            key := simpleDown
+            number--
+        } else if (key == "k") {
+            Send, {Home}{Down}+{Up}+{Up}
+            key := simpleUp
+            number--
+        } else if (key == "h") {
+            Send, +{Left}
+        } else if (key == "l") {
+            Send, +{Right}
+        } else if (key == shorhtcut) {
+            Send, {Home}{Home}+{End}+{Right}
+            key := simpleDown
+        } else if (key == "w") {
+            Send, +^{Right}
+        } else if (key == "b") {
+            Send, +^{Left}
+        } else if (key == "$") {
+            Send, +{End}
+            key := simpleDown
+        } else if (key == "^" or key == "0") {
+            Send, +{Home}
+            number := 0
+        } else if (key == "g") {
+            Send, {End}+^{Home}
+            number := 0
+        } else if (key == "G") {
+            Send, {Home}{Home}+^{End}
+            number := 0
+        } else if (key == simpleDown) {
+            Send, +{Down}
+        } else if (key == simpleUp) {
+            Send, +{Up}
+        } else {
+            sendCommand := false
+        }
+    }
+
+    if (sendCommand) {
+        Send, %command%
+    }
+}
+

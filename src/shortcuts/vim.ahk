@@ -8,3 +8,5 @@
 #Include %A_ScriptDir%\shortcuts\vim\arrows.ahk
 #Include %A_ScriptDir%\shortcuts\vim\navigation.ahk
 #Include %A_ScriptDir%\shortcuts\vim\search.ahk
+#Include %A_ScriptDir%\shortcuts\vim\numbers-first.ahk
+

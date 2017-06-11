@@ -26,3 +26,4 @@ a::
 	switchToInsertMode()
 	Send, {End}
 	Return
+
