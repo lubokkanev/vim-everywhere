@@ -25,15 +25,6 @@
 	
 	Return
 
-9::
-	if (visualMode) {
-		Send, +{End}
-	} else {
-		Send, {End}
-	}
-
-	Return
-
 +0::
 	if (visualMode) {
 		Send, +{Home}
@@ -43,24 +34,11 @@
 
 	Return
 
-+9::
-	Send, +{End}
-	Return
-
 ^0::
 	if (visualMode) {
 		Send, +^{Home}
 	} else {
 		Send, ^{Home}
-	}
-
-	Return
-
-^9::
-	if (visualMode) {
-		Send, +^{End}
-	} else {
-		Send, ^{End}
 	}
 
 	Return
@@ -83,10 +61,6 @@
 
 	Return
 
-^+9::
-	Send, ^+{End}
-	Return
-
 ^+0::
 	Send, ^+{Home}
 	Return
@@ -102,3 +76,4 @@
 
 g::
 	Return
+

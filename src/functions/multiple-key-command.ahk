@@ -1,19 +1,19 @@
 multipleKeyCommand(shorhtcut, command) {
     simpleDown := "simple-down"
     simpleUp := "simple-up"
+    number := 1
 
     Input, key, L1
-    number := 0
     
-    while (key >= "1" and key <= "9") {
-        number *= 10
-        number += %key%
+    if (key >= "1" and key <= "9") {
+        number := 0
 
-        Input, key, L1
-    }
+        while (key >= "0" and key <= "9") {
+            number *= 10
+            number += %key%
 
-    if (number == 0) {
-        number := 1
+            Input, key, L1 ; todo: also check for ctrl, shift etc
+        }
     }
 
     sendCommand := true
