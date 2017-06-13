@@ -14,11 +14,29 @@
 	Send, ^{Up}
 	Return
 
-{::
-	Send, !+y
+${::
+    WinGetActiveTitle, title
+    intellij := "IntelliJ"
+
+    IfInString, title, %intellij%
+    {
+        Send, !+y
+    } else {
+        Send, {{}
+    }
+
 	Return
 
-}::
-	Send, !+u
+$}::
+    WinGetActiveTitle, title
+    intellij := "IntelliJ"
+
+    IfInString, title, %intellij%
+    {
+        Send, !+u
+    } else {
+        Send, {}}
+    }
+
 	Return
 
