@@ -1,4 +1,4 @@
-multipleKeyCommand(shorhtcut, command) {
+multipleKeyCommand(shortcut, command) {
     simpleDown := "simple-down"
     simpleUp := "simple-up"
     number := 1
@@ -33,7 +33,7 @@ multipleKeyCommand(shorhtcut, command) {
             Send, +{Left}
         } else if (key == "l") {
             Send, +{Right}
-        } else if (key == shorhtcut) {
+        } else if (key == shortcut) {
             Send, {Home}{Home}+{End}+{Right}
             key := simpleDown
         } else if (key == "w") {
@@ -62,5 +62,17 @@ multipleKeyCommand(shorhtcut, command) {
     }
 
     Send, %command%
+}
+
+visualOrMultipleKeyCommand(shortcut, command) {
+    if (visualMode) {
+        turnVisualModeOff()
+        Send, %command%
+    } else {
+        multipleKeyCommand(shortcut, command)
+        Send, {Left}
+    }
+
+    Return
 }
 

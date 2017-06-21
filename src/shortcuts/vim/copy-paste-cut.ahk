@@ -6,44 +6,28 @@ p::
 	
 +p::
 	Send, p
+
 	Return
 
 y::
-	if (visualMode) {
-		turnVisualModeOff()
-		Send, ^c
-	} else {
-        multipleKeyCommand("y", "^c")
-        Send, {Left}
-    }
+    visualOrMultipleKeyCommand("y", "^c")
 
 	Return
 
 d::
-	if (visualMode) {
-		turnVisualModeOff()
-		Send, ^x
-	} else {
-        multipleKeyCommand("d", "^x")
-    }
-
+    visualOrMultipleKeyCommand("d", "^x")
+    
     Return
 
 c::
-	if (visualMode) {
-		switchToInsertMode()
-		turnVisualModeOff()
-		Send, s
-	} else {
-        multipleKeyCommand("c", "^x")
-        switchToInsertMode()
-    }
+    visualOrMultipleKeyCommand("c", "^x")
+    switchToInsertMode()
 
 	Return
 
 +c::
-    Send, {Home}{Home}
-    Send, c
+    Send, +{End}^x
+    switchToInsertMode()
 
     Return
 
