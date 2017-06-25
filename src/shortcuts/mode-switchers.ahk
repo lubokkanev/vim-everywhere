@@ -3,11 +3,6 @@
 	switchToCommandMode()
 	Return
 
-+^[::
-	Suspend Permit
-	switchToCommandMode()
-	Return
-
 i::
 	switchToInsertMode()
 	Return
