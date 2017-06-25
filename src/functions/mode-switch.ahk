@@ -1,8 +1,3 @@
-releaseLocks() {
-	Send, {Shift up}{Ctrl up}
-	turnVisualModeOff()
-}
-
 setIcon() {
 	If A_IsSuspended
 		Menu, Tray, Icon, ..\icons\grey.ico, , 1
@@ -11,7 +6,6 @@ setIcon() {
 }
 
 modeSwitchOperations() {
-	releaseLocks()
 	setIcon()
 }
 
@@ -24,3 +18,4 @@ switchToCommandMode() {
 	Suspend Off
 	modeSwitchOperations()
 }
+

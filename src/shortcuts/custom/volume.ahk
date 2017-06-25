@@ -11,3 +11,4 @@
 ;	volume := Ceil(volume) ; Round up
 ;	TrayTip, System Volume, Volume is at %volume%`%, 5, 1
 ;	Return
+

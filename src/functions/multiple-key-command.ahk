@@ -57,12 +57,10 @@ multipleKeyCommand(shorhtcut, command) {
         } else if (key == simpleUp) {
             Send, +{Up}
         } else {
-            sendCommand := false
+            Return
         }
     }
 
-    if (sendCommand) {
-        Send, %command%
-    }
+    Send, %command%
 }
 

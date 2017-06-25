@@ -16,9 +16,8 @@
 
 ${::
     WinGetActiveTitle, title
-    intellij := "IntelliJ"
 
-    IfInString, title, %intellij%
+    IfInString, title, "IntelliJ"
     {
         Send, !+y
     } else {
@@ -29,9 +28,8 @@ ${::
 
 $}::
     WinGetActiveTitle, title
-    intellij := "IntelliJ"
 
-    IfInString, title, %intellij%
+    IfInString, title, "IntelliJ"
     {
         Send, !+u
     } else {

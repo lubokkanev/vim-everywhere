@@ -3,8 +3,8 @@ lockComputer() {
 
 	try {
 		Run, %lockFile%
-	}
-	catch {
+	} catch {
 		Msgbox, Can't lock the PC, the lock file %lockFile% doesn't exist. 
 	}
 }
+

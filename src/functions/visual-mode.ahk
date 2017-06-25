@@ -5,3 +5,4 @@ turnVisualModeOn() {
 turnVisualModeOff() {
 	visualMode := false
 }
+
