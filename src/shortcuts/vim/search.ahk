@@ -1,5 +1,6 @@
 /::
     Send, ^f
+    switchToInsertMode()
     Return
 
 n::
