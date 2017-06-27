@@ -7,6 +7,7 @@ setIcon() {
 
 modeSwitchOperations() {
 	setIcon()
+    turnVisualModeOff()
 }
 
 switchToInsertMode() {
