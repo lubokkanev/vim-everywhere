@@ -31,3 +31,7 @@ c::
 
     Return
 
++d::
+    Send, +{End}^x
+
+    Return
