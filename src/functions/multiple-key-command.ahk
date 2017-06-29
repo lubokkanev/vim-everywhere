@@ -70,7 +70,6 @@ visualOrMultipleKeyCommand(shortcut, command) {
         Send, %command%
     } else {
         multipleKeyCommand(shortcut, command)
-        Send, {Left}
     }
 
     Return

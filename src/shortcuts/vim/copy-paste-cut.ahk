@@ -11,6 +11,7 @@ p::
 
 y::
     visualOrMultipleKeyCommand("y", "^c")
+    Send, {Left}
 
 	Return
 
@@ -26,7 +27,7 @@ c::
 	Return
 
 +c::
-    Send, +{End}^x
+    Send, +d
     switchToInsertMode()
 
     Return
