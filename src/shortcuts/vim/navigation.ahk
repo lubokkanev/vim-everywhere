@@ -15,10 +15,7 @@
 	Return
 
 ${::
-    WinGetActiveTitle, title
-
-    IfInString, title, "IntelliJ"
-    {
+    if inIntellij() {
         Send, !+y
     } else {
         Send, {{}
@@ -27,14 +24,21 @@ ${::
 	Return
 
 $}::
-    WinGetActiveTitle, title
-
-    IfInString, title, "IntelliJ"
-    {
+    if inIntellij() {
         Send, !+u
     } else {
         Send, {}}
     }
 
 	Return
+
+:?*CZB0:zz::
+    if inIntellij() {
+        Send, ^m
+    }
+    
+    Return
+
+z::
+    Return
 
