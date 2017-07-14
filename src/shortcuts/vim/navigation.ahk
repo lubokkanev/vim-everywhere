@@ -7,11 +7,11 @@
 	Return
 
 ^e::
-	Send, ^{Down}{Down}
+	SendInput, ^{Down}{Down}
 	Return
 
 ^y::
-	Send, ^{Up}{Up}
+	SendInput, ^{Up}{Up}
 	Return
 
 ${::
