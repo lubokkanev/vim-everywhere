@@ -21,9 +21,12 @@ numbersFirst(number) {
     }
 
     while (number > 0) {
-        number--
-
         Send, %key%
+
+        if (key == "i" or key == "a" or key == "I" or key == "A" or key == "v" or key == "V" or key == "^[") {
+            break
+        }
+        number--
     }
 }
 

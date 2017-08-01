@@ -22,3 +22,12 @@ a::
 	Send, {End}
 	Return
 
+v::
+    turnVisualModeOn()
+    Return
+
++v::
+    turnVisualModeOn()
+    Send, {Home}{Home}+{Down}
+    Return
+

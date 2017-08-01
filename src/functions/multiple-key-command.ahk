@@ -52,6 +52,9 @@ multipleKeyCommand(shortcut, command) {
         } else if (key == "G") {
             Send, {Home}{Home}+^{End}
             number := 0
+        } else if (key == "i" or key == "a") {
+            Send, %key%
+            Return
         } else if (key == simpleDown) {
             Send, +{Down}
         } else if (key == simpleUp) {
