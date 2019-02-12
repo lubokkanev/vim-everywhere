@@ -1,6 +1,8 @@
 /::
     Send, ^f
-    switchToInsertMode()
+    if (!visualMode) {
+        switchToInsertMode()
+    }
     Return
 
 n::
