@@ -18,3 +18,5 @@
 #Include %a_scriptDir%\shortcuts\vim\arrows\shift-win-alt-arrows.ahk
 
 #Include %a_scriptDir%\shortcuts\vim\arrows\ctrl-shift-win-alt-arrows.ahk
+
+#Include %a_scriptDir%\shortcuts\vim\arrows\ctrl-p-n.ahk
