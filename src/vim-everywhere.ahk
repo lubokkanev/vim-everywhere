@@ -7,5 +7,5 @@ global visualMode := false
 
 #SingleInstance force
 
-SetKeyDelay, 0
+SetKeyDelay, -1
 
