@@ -28,6 +28,5 @@ v::
 
 +v::
     turnVisualModeOn()
-    Send, {Home}{Home}+{Down}
+    Send, {End}+{Home}
     Return
-

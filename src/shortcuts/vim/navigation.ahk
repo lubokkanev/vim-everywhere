@@ -42,3 +42,16 @@ $}::
 z::
     Return
 
+:?*CZB0:gt::
+	if (!visualMode) {
+	    Send, ^{Tab}
+	}
+    
+	Return
+
+:?*CZB0:gT::
+	if (!visualMode) {
+	    Send, ^+{Tab}
+	}
+
+	Return
