@@ -1,3 +1,4 @@
+#Include %A_ScriptDir%\shortcuts\vim\common.ahk
 #Include %A_ScriptDir%\shortcuts\vim\copy-paste-cut.ahk
 #Include %A_ScriptDir%\shortcuts\vim\delete.ahk
 #Include %A_ScriptDir%\shortcuts\vim\new-line-up-down.ahk
@@ -9,4 +10,3 @@
 #Include %A_ScriptDir%\shortcuts\vim\search.ahk
 #Include %A_ScriptDir%\shortcuts\vim\numbers-first.ahk
 #Include %A_ScriptDir%\shortcuts\vim\indent.ahk
-

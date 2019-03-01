@@ -1,4 +1,5 @@
 turnVisualModeOn() {
+	showMode("VISUAL")
 	visualMode := true
 }
 

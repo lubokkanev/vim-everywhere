@@ -1,3 +1,4 @@
+#If (vimify)
 >::
     visualOrMultipleKeyCommand(">", "{Tab}")
     Send, {Left}

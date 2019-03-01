@@ -1,3 +1,4 @@
+#If (vimify)
 +6::
 	if (visualMode) {
 		Send, +{Home}

@@ -1,12 +1,23 @@
 ^[::
 	Suspend Permit
-	switchToCommandMode()
+	toggleVimify()
 	Return
 
-i::
-	switchToInsertMode()
+^]::
+	Suspend Off
+	toggleMouseMode()
 	Return
 	
+<<<<<<< HEAD
+~Esc::
+	Suspend Off
+	if (vimify) {
+		switchToCommandMode()
+	} else {
+		Suspend On
+	}
+	Return
+=======
 +i::
 	switchToInsertMode()
 	Send, {Home}
@@ -28,5 +39,7 @@ v::
 
 +v::
     turnVisualModeOn()
-    Send, {End}+{Home}
+    Send, {Home}{Home}+{Down}
     Return
+
+>>>>>>> parent of cb7e1ad... Fixed start linewise visual mode command behavior

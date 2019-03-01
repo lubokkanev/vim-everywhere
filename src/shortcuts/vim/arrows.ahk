@@ -1,5 +1,6 @@
 #Include %a_scriptDir%\shortcuts\vim\arrows\only-arrows.ahk
 
+#Include %a_scriptDir%\shortcuts\vim\arrows\capslock-arrows.ahk
 #Include %a_scriptDir%\shortcuts\vim\arrows\shift-arrows.ahk
 #Include %a_scriptDir%\shortcuts\vim\arrows\win-arrows.ahk
 #Include %a_scriptDir%\shortcuts\vim\arrows\alt-arrows.ahk

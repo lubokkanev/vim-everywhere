@@ -1,8 +1,10 @@
-switchToInsertMode()
+setIcon()
 
+global vimify := false
 global visualMode := false
+global mouseMode := false
 
-#include functions.ahk
+#Include functions.ahk
 #Include shortcuts.ahk
 
 #SingleInstance force

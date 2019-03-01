@@ -1,3 +1,4 @@
+#If (vimify)
 ^u::
 	Send, {PgUp}
 	Return

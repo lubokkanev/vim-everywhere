@@ -1,3 +1,4 @@
+#If (vimify)
 p::
 	Send, ^v
 	turnVisualModeOff()

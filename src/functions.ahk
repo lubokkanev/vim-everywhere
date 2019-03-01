@@ -4,4 +4,5 @@
 #Include functions\multiple-key-command.ahk
 #Include functions\current-window.ahk
 #Include functions\icon.ahk
-
+#Include functions\mouse-move.ahk
+#Include functions\gui.ahk

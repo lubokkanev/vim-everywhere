@@ -1,3 +1,4 @@
+#If (vimify)
 /::
     Send, ^f
     if (!visualMode) {

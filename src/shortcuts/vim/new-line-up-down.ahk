@@ -1,3 +1,4 @@
+#If (vimify)
 o::
 	switchToInsertMode()
 	Send, {End}{Enter}

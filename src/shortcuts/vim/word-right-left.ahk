@@ -1,3 +1,4 @@
+#If (vimify)
 w::
 	if (visualMode) {
 		Send, +^{Right}
