@@ -2,7 +2,7 @@ switchToInsertMode()
 
 global visualMode := false
 
-#include functions.ahk
+#Include functions.ahk
 #Include shortcuts.ahk
 
 #SingleInstance force
