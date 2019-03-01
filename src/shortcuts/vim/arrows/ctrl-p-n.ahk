@@ -1,7 +1,7 @@
 ^p::
-	Send, {Up}
-	Return
+    Send, {Up}
+    Return
 
 ^n::
-	Send, {Down}
-	Return
+    Send, {Down}
+    Return

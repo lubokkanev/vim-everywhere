@@ -1,40 +1,40 @@
 x::
-	Send, {Delete}
-	turnVisualModeOff()
-	Return
+    Send, {Delete}
+    turnVisualModeOff()
+    Return
 
 $^x::
-	Send, ^{Delete}
-	Return
-	
+    Send, ^{Delete}
+    Return
+
 +x::
-	Send, {BackSpace}
-	Return
+    Send, {BackSpace}
+    Return
 
 s::
-	switchToInsertMode()
-	if (visualMode) {
-		Send, ^x
-	} else {
-		Send, {Delete}
-	}
-	
-	turnVisualModeOff()
-	
-	Return
+    switchToInsertMode()
+    if (visualMode) {
+        Send, ^x
+    } else {
+        Send, {Delete}
+    }
+
+    turnVisualModeOff()
+
+    Return
 
 +s::
-	switchToInsertMode()
-	Send, {Home}+{End}^x
-	Return
+    switchToInsertMode()
+    Send, {Home}+{End}^x
+    Return
 
 r::
-	switchToInsertMode()
+    switchToInsertMode()
 
-	Input, key, L1
-	Send, {Delete}%key%{Left}
+    Input, key, L1
+    Send, {Delete}%key%{Left}
 
-	switchToCommandMode()
+    switchToCommandMode()
 
-	Return
+    Return
 

@@ -1,8 +1,8 @@
 !^+r::
-	Reload
-	Return
+    Reload
+    Return
 
 !^+e::
-	ExitApp
-	Return
+    ExitApp
+    Return
 

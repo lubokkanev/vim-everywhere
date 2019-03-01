@@ -1,15 +1,15 @@
 ^#l::
-	Send, ^#{Right}
-	Return
+    Send, ^#{Right}
+    Return
 
 ^#h::
-	Send, ^#{Left}
-	Return
+    Send, ^#{Left}
+    Return
 
 ^#j::
-	Send, ^#{Down}
-	Return
+    Send, ^#{Down}
+    Return
 
 ^#k::
-	Send, ^#{Up}
-	Return
+    Send, ^#{Up}
+    Return

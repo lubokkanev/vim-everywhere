@@ -1,38 +1,38 @@
 w::
-	if (visualMode) {
-		Send, +^{Right}
-	} else {
-		Send, ^{Right}
-	}
+    if (visualMode) {
+        Send, +^{Right}
+    } else {
+        Send, ^{Right}
+    }
 
-	Return
+    Return
 
 b::
-	if (visualMode) {
-		Send, +^{Left}
-	} else {
-		Send, ^{Left}
-	}
+    if (visualMode) {
+        Send, +^{Left}
+    } else {
+        Send, ^{Left}
+    }
 
-	Return
+    Return
 
 +w::
-	Send, w
-	Return
+    Send, w
+    Return
 
 +b::
-	Send, b
-	Return
+    Send, b
+    Return
 
 e::
-	if (visualMode) {
-		Send, +^{Right}+{Left}
-	} else {
-		Send, ^{Right}{Left}
-	}
+    if (visualMode) {
+        Send, +^{Right}+{Left}
+    } else {
+        Send, ^{Right}{Left}
+    }
 
-	Return
+    Return
 
 +e::
-	Send, e
-	Return
+    Send, e
+    Return

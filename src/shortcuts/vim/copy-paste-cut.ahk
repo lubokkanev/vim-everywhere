@@ -1,30 +1,30 @@
 p::
-	Send, ^v
-	turnVisualModeOff()
+    Send, ^v
+    turnVisualModeOff()
 
-	Return
-	
+    Return
+
 +p::
-	Send, p
+    Send, p
 
-	Return
+    Return
 
 y::
     visualOrMultipleKeyCommand("y", "^c")
     Send, {Left}
 
-	Return
+    Return
 
 d::
     visualOrMultipleKeyCommand("d", "^x")
-    
+
     Return
 
 c::
     visualOrMultipleKeyCommand("c", "^x")
     switchToInsertMode()
 
-	Return
+    Return
 
 +c::
     Send, +d

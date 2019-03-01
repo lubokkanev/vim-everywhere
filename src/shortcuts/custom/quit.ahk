@@ -1,4 +1,4 @@
 q::
-	Send, !{F4}
-	Return
-	
+    Send, !{F4}
+    Return
+

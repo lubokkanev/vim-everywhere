@@ -1,15 +1,15 @@
 modeSwitchOperations() {
-	setIcon()
+    setIcon()
     turnVisualModeOff()
 }
 
 switchToInsertMode() {
-	Suspend On
-	modeSwitchOperations()
+    Suspend On
+    modeSwitchOperations()
 }
 
 switchToCommandMode() {
-	Suspend Off
-	modeSwitchOperations()
+    Suspend Off
+    modeSwitchOperations()
 }
 

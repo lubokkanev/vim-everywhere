@@ -1,15 +1,15 @@
 +#!h::
-	Send, #!{Left}
-	Return 
+    Send, #!{Left}
+    Return
 
 +#!l::
-	Send, #!{Right}
-	Return 
+    Send, #!{Right}
+    Return
 
 +#!j::
-	Send, #!{Down}
-	Return 
+    Send, #!{Down}
+    Return
 
 +#!k::
-	Send, #!{Up}
-	Return
+    Send, #!{Up}
+    Return

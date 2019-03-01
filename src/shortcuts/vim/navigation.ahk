@@ -1,18 +1,18 @@
 ^u::
-	Send, {PgUp}
-	Return
+    Send, {PgUp}
+    Return
 
 ^d::
-	Send, {PgDn}
-	Return
+    Send, {PgDn}
+    Return
 
 ^e::
-	SendInput, ^{Down}{Down}
-	Return
+    SendInput, ^{Down}{Down}
+    Return
 
 ^y::
-	SendInput, ^{Up}{Up}
-	Return
+    SendInput, ^{Up}{Up}
+    Return
 
 ${::
     if inIntellij() {
@@ -21,7 +21,7 @@ ${::
         Send, {{}
     }
 
-	Return
+    Return
 
 $}::
     if inIntellij() {
@@ -30,13 +30,13 @@ $}::
         Send, {}}
     }
 
-	Return
+    Return
 
 :?*CZB0:zz::
     if inIntellij() {
         Send, ^m
     }
-    
+
     Return
 
 z::

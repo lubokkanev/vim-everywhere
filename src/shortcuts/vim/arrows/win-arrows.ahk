@@ -1,22 +1,22 @@
 #h::
-	Send, #{Left}
-	Return
+    Send, #{Left}
+    Return
 
 #l::
-	Suspend Permit
+    Suspend Permit
 
-	if (A_IsSuspended) {
-		lockComputer()
-	} else {
-		Send, #{Right}
-	}
+    if (A_IsSuspended) {
+        lockComputer()
+    } else {
+        Send, #{Right}
+    }
 
-	Return
+    Return
 
 #j::
-	Send, #{Down}
-	Return
+    Send, #{Down}
+    Return
 
 #k::
-	Send, #{Up}
-	Return
+    Send, #{Up}
+    Return

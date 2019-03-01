@@ -1,14 +1,14 @@
 #!j::
-	SoundSet -2
-	Return 
+    SoundSet -2
+    Return
 
 #!k::
-	SoundSet +2
-	Return
+    SoundSet +2
+    Return
 
 ;#!h::
-;	SoundGet, volume
-;	volume := Ceil(volume) ; Round up
-;	TrayTip, System Volume, Volume is at %volume%`%, 5, 1
-;	Return
+;    SoundGet, volume
+;    volume := Ceil(volume) ; Round up
+;    TrayTip, System Volume, Volume is at %volume%`%, 5, 1
+;    Return
 

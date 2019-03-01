@@ -1,9 +1,9 @@
 o::
-	switchToInsertMode()
-	Send, {End}{Enter}
-	Return
+    switchToInsertMode()
+    Send, {End}{Enter}
+    Return
 
 +o::
-	switchToInsertMode()
-	Send, {Home}{Enter}{Up}
-	Return
+    switchToInsertMode()
+    Send, {Home}{Enter}{Up}
+    Return

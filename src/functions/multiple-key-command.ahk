@@ -4,7 +4,7 @@ multipleKeyCommand(shortcut, command) {
     number := 1
 
     Input, key, L1
-    
+
     if (key >= "1" and key <= "9") {
         number := 0
 
@@ -18,7 +18,7 @@ multipleKeyCommand(shortcut, command) {
 
     sendCommand := true
 
-    while (number > 0) { 
+    while (number > 0) {
         number--
 
         if (key == "j") {

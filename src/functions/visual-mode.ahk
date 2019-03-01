@@ -1,8 +1,8 @@
-turnVisualModeOn() {
-	visualMode := true
+turnVisualModeOff() {
+    visualMode := false
 }
 
-turnVisualModeOff() {
-	visualMode := false
+turnVisualModeOn() {
+    visualMode := true
 }
 
