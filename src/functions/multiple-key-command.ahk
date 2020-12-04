@@ -14,54 +14,58 @@ multipleKeyCommand(shortcut, command) {
 
             Input, key, L1 ; todo: also check for ctrl, shift etc
         }
-    }
 
-    sendCommand := true
-
-    while (number > 0) {
-        number--
-
-        if (key == "j") {
-            Send, {Home}+{Down}+{Down}
-            key := simpleDown
+        while (number > 0) {
             number--
-        } else if (key == "k") {
-            Send, {Home}{Down}+{Up}+{Up}
-            key := simpleUp
-            number--
-        } else if (key == "h") {
-            Send, +{Left}
-        } else if (key == "l") {
-            Send, +{Right}
-        } else if (key == shortcut) {
-            Send, {Home}{Home}+{End}+{Right}
-            key := simpleDown
-        } else if (key == "w") {
-            Send, +^{Right}
-        } else if (key == "b") {
-            Send, +^{Left}
-        } else if (key == "$") {
-            Send, +{End}
-            key := simpleDown
-        } else if (key == "^" or key == "0") {
-            Send, +{Home}
-            number := 0
-        } else if (key == "g") {
-            Send, {End}+^{Home}
-            number := 0
-        } else if (key == "G") {
-            Send, {Home}{Home}+^{End}
-            number := 0
-        } else if (key == "i" or key == "a") {
-            Send, %key%
-            Return
-        } else if (key == simpleDown) {
-            Send, +{Down}
-        } else if (key == simpleUp) {
-            Send, +{Up}
-        } else {
-            Return
+
+            if (key == "j") {
+                Send, {Home}+{Down}+{Down}
+                key := simpleDown
+                number--
+            } else if (key == "k") {
+                Send, {Home}{Down}+{Up}+{Up}
+                key := simpleUp
+                number--
+            } else if (key == "h") {
+                Send, +{Left}
+            } else if (key == "l") {
+                Send, +{Right}
+            } else if (key == shortcut) {
+                Send, {Home}{Home}+{End}+{Right}
+                key := simpleDown
+            } else if (key == "w") {
+                Send, +^{Right}
+            } else if (key == "b") {
+                Send, +^{Left}
+            } else if (key == "$") {
+                Send, +{End}
+                key := simpleDown
+            } else if (key == "^" or key == "0") {
+                Send, +{Home}
+                number := 0
+            } else if (key == "g") {
+                Send, {End}+^{Home}
+                number := 0
+            } else if (key == "G") {
+                Send, {Home}{Home}+^{End}
+                number := 0
+            } else if (key == "i" or key == "a") {
+                Send, %key%
+                Return
+            } else if (key == simpleDown) {
+                Send, +{Down}
+            } else if (key == simpleUp) {
+                Send, +{Up}
+            } else {
+                Return
+            }
         }
+    } else if (key == "i") {
+       Input, key, L1
+
+       if (key == "w") {
+           Send, ^{Left}+^{Right}
+       }
     }
 
     Send, %command%
