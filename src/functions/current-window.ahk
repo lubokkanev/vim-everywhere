@@ -1,7 +1,8 @@
 inIntellij() {
     WinGetActiveTitle, title
+    WinGet file, ProcessPath, A
 
-    If InStr(title, "IntelliJ") {
+    if InStr(file, "idea") {
         return True
     }
 

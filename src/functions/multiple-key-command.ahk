@@ -5,18 +5,26 @@ multipleKeyCommand(shortcut, command) {
 
     Input, key, L1
 
-    if (key >= "1" and key <= "9") {
-        number := 0
+    if (key == "i") {
+       Input, key, L1
 
-        while (key >= "0" and key <= "9") {
-            number *= 10
-            number += %key%
-
-            Input, key, L1 ; todo: also check for ctrl, shift etc
-        }
+       if (key == "w") {
+           Send, ^{Left}+^{Right}
+       }
     }
 
-    sendCommand := true
+    number := 0
+
+    while (key >= "0" and key <= "9") {
+        number *= 10
+        number += %key%
+
+        Input, key, L1 ; todo: also check for ctrl, shift etc
+    }
+
+    if (number == 0) {
+        number := 1
+    }
 
     while (number > 0) {
         number--
