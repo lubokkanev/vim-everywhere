@@ -8,7 +8,7 @@ switchToInsertMode() {
     modeSwitchOperations()
 }
 
-switchToCommandMode() {
+switchToNormalMode() {
     Suspend Off
     modeSwitchOperations()
 }

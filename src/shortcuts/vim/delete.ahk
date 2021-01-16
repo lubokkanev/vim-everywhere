@@ -34,7 +34,7 @@ r::
     Input, key, L1
     Send, {Delete}%key%{Left}
 
-    switchToCommandMode()
+    switchToNormalMode()
 
     Return
 

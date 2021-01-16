@@ -1,6 +1,6 @@
 ^[::
     Suspend Permit
-    switchToCommandMode()
+    switchToNormalMode()
     Return
 
 i::
