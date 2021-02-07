@@ -3,4 +3,5 @@
 #Include %A_ScriptDir%\shortcuts\custom\mouse.ahk
 #Include %A_ScriptDir%\shortcuts\custom\script-operations.ahk
 #Include %A_ScriptDir%\shortcuts\custom\transparent-windows.ahk
+#Include %A_ScriptDir%\shortcuts\custom\alt-arrows.ahk
 
