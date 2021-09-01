@@ -2,9 +2,18 @@
     Suspend Permit
     switchToCommandMode()
     Return
+^;::
+    Suspend Permit
+    switchToCommandMode()
+    Return
 
 i::
     switchToInsertMode()
+    Return
+
+Enter::
+    switchToInsertMode()
+    Send, {Enter}
     Return
 
 +i::
