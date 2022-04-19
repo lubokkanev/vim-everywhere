@@ -1,4 +1,4 @@
-$RAlt::
+$*RAlt::
     Suspend Permit
     switchToNormalMode()
     KeyWait, RAlt
